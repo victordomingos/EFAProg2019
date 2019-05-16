@@ -119,12 +119,16 @@ Changes to be committed:
         modified:   README.md
 ```
 
-Para finalizar:
+Com `git commit` guardamos o estado atual do repositório (relativamente aos ficheiros/pastas que adicionamos com `git add`):
 
 ```
-
+$ git commit -m "Conteúdo adicional no ficheiro README.md"
+[master ef23443] Conteúdo adicional no ficheiro README.md
+ 1 file changed, 131 insertions(+), 94 deletions(-)
+ rewrite README.md (67%)
 ```
 
+Neste momento, uma consulta rápida ao `git status` esclarece que o nosso repositório está adiantado em relação ao repositório remoto.
 
 
 
