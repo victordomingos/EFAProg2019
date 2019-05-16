@@ -37,6 +37,13 @@ $ git init
 Initialized empty Git repository in C:/Users/victor/dev/Brinquedo6/.git/
 ```
 
+
+### c) Criar um novo repositório local a partir de uma pasta existente
+
+Se já temos uma pasta no nosso próprio computador que queremos transformar num repositório, também é possível. Primeiro inicializamos o repositório com `git init` e, seguidamente, adicionamos o seu conteúdo `git add .` (este comando adiciona todo o conteúdo da pasta atual). O comando `git commit`, que exemplificaremos mais abaixo, guardará esse estado inicial do repositório.
+
+
+
 ## 3. Alterar ficheiros num repositório
 
 ### a) Obter as alterações mais recentes a partir do repositório remoto
@@ -128,7 +135,7 @@ $ git commit -m "Conteúdo adicional no ficheiro README.md"
  rewrite README.md (67%)
 ```
 
-Neste momento, uma consulta rápida ao `git status` esclarece que o nosso repositório está adiantado em relação ao repositório remoto.
+Neste momento, uma consulta rápida ao `git status` esclarece que apesar de não haver ficheiros ou pastas para registar num novo `commit`, o nosso repositório está adiantado em relação ao repositório remoto:
 
 ```
 $ git status
@@ -139,4 +146,23 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ``` 
 
+Para enviar as nossas alterações para o repositório remoto (neste caso o GitHub), basta usar o comando `git push`:
 
+```
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 95.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/victordomingos/EFAProg2019
+   c638269..cb2faf6  master -> master
+```
+
+## Contribuir
+
+Este guia, cuja elaboração se encontra em curso, é uma introdução muito sucinta a uma ferramenta complexa. Há claramente muitos aspetos por explicar e diversos procedimentos que seria interessante abordar. Assim, quaisquer sugestões de melhoramento deste documento serão muito bem-vindas. Erros, questões e ideias podem ser submetidos na página [Issues](https://github.com/victordomingos/EFAProg2019/issues).
+
+Por outro lado, se tem já alguma conhecimento que gostaria de partilhar, sobre controlo de versões e colaboração com `git`, os seus [Pull requests](https://github.com/victordomingos/EFAProg2019/pulls) serão muito bem-vindos. Dicas introdutórias poderão ser acrescentadas a este mesmo ficheiro. Já explicações mais extensas ou mais aprofundadas deverão ser submetidas como ficheiros separados, por temas.
