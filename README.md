@@ -1,5 +1,5 @@
 
-# Repositório da turma EFA NS - Programador(a) de Informática (2019-2010). 
+# Repositório da turma EFA NS - Programador(a) de Informática (2019/2020)
 
 O objetivo principal deste repositório privado é ajudar os formandos desta turma a familiarizarem-se com o GitHub, com o conceito de controlo de versões e com a utilização básica do comando `git`. Adicionalmente, todos os membros da turma estão convidados a dar o seu contributo para os conteúdos deste repositório, adicionando mais dicas ou propondo alterações a algum dos guias ou programas existentes.
 
