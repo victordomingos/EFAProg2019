@@ -14,7 +14,7 @@ O comando `git` é um programa de linha de comandos que pode ser instalado nos v
 
 Quando pretendemos criar uma cópia local de um repositório remoto, para explorarmos o código e a documentação no nosso próprio computador, para compilarmos e usarmos a aplicação ou para posteriormente colaborarmos com esse projeto, utilizamos o comando `git clone`:
 
-```
+```console
 $ git clone https://github.com/victordomingos/EFAProg2019
 Cloning into 'EFAProg2019'...
 remote: Enumerating objects: 12, done.
@@ -31,7 +31,7 @@ Este comando irá criar uma nova pasta na pasta de trabalho atual, contendo cóp
 
 Se o que pretendemos é criar um novo repositório no nosso próprio computador, mesmo que posteriormente o pretendamos disponibilizar através do Github ou de outro servidor, primeiro precisamos de criar a pasta do projeto (caso ainda não exista). De seguida, usamos o comando `cd` para irmos para essa pasta. Finalmente, o seguinte comando irá inicializar um novo repositório local a partir da pasta do projeto:
 
-```
+```console
 $ mkdir Brinquedo6
 $ cd Brinquedo6/
 $ git init
@@ -51,7 +51,7 @@ Se já temos uma pasta no nosso próprio computador que queremos transformar num
 
 Para garantir que estamos a trabalhar com a versão mais recente do projeto, isto é, que o código no nosso repositório local está sincronizado com o repositório remoto, começamos por navegar até à pasta do repositório e usamos o comando `git fetch`.
 
-```
+```console
 $ cd EFAProg2019/
 $ git fetch
 remote: Enumerating objects: 5, done.
@@ -65,7 +65,7 @@ From https://github.com/victordomingos/EFAProg2019
 
 O comando `git status` permite-nos perceber se há alterações pendentes:
 
-```
+```console
 $ git status
 On branch master
 Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
@@ -77,7 +77,7 @@ nothing to commit, working tree clean
 
 Havendo alterações mais recentes no repositório remoto, o comando `git pull` atualiza o nosso repositório local com essas mesmas alterações.
 
-```
+```console
 $ git pull
 Updating ed77901..121f33d
 Fast-forward
@@ -93,12 +93,11 @@ nothing to commit, working tree clean
 
 
 
-
 ### b) Enviar para o repositório remoto as alterações locais
 
 Depois de efetuar alterações no nosso repositório local, por exemplo, criando, apagando ou mudando o nome a ficheiros, ou editando alguns deles, podemos guardar o estado atual com uma operação designada `commit`. Mas primeiro precisamos de preparar esse `commit`, adicionando as pastas e/ou ficheiros a considerar:
 
-```
+```console
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -116,7 +115,7 @@ $ git add README.md
 
 Uma vez mais, o comando `git status` permite-nos consultar as alterações pendentes ou, neste caso, em preparação:
 
-```
+```console
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -129,7 +128,7 @@ Changes to be committed:
 
 Com `git commit` guardamos o estado atual do repositório (relativamente aos ficheiros/pastas que adicionamos com `git add`):
 
-```
+```console
 $ git commit -m "Conteúdo adicional no ficheiro README.md"
 [master ef23443] Conteúdo adicional no ficheiro README.md
  1 file changed, 131 insertions(+), 94 deletions(-)
@@ -138,7 +137,7 @@ $ git commit -m "Conteúdo adicional no ficheiro README.md"
 
 Neste momento, uma consulta rápida ao `git status` esclarece que apesar de não haver ficheiros ou pastas para registar num novo `commit`, o nosso repositório está adiantado em relação ao repositório remoto:
 
-```
+```console
 $ git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
@@ -149,7 +148,7 @@ nothing to commit, working tree clean
 
 Para enviar as nossas alterações para o repositório remoto (neste caso o GitHub), basta usar o comando `git push`:
 
-```
+```console
 $ git push
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
