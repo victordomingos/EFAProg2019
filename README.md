@@ -3,14 +3,29 @@
 
 O objetivo principal deste repositório é ajudar os formandos desta turma a familiarizarem-se com o GitHub, com o conceito de controlo de versões e com a utilização básica do comando `git`. Adicionalmente, todos os membros da turma estão convidados a dar o seu contributo para os conteúdos deste repositório, adicionando mais dicas ou propondo alterações a algum dos guias ou programas existentes.
 
+## Conteúdo
+- **[ANTES DE COMEÇAR: Instalar o comando `git`](#antes-de-come%C3%A7ar-instalar-o-comando-git)**  
 
-## 1. ANTES DE COMEÇAR: Instalar o comando `git`
+- **[Repositórios](#reposit%C3%B3rios)**  
+   - [Criar uma cópia local de um repositório (clone)](#criar-uma-c%C3%B3pia-local-de-um-reposit%C3%B3rio-clone)  
+   - [Criar um novo repositório local](#criar-um-novo-reposit%C3%B3rio-local)  
+   - [Criar um novo repositório local a partir de uma pasta existente](#criar-um-novo-reposit%C3%B3rio-local-a-partir-de-uma-pasta-existente)  
+   - [Configurar a lista de pastas e ficheiros a ignorar](#configurar-a-lista-de-pastas-e-ficheiros-a-ignorar)  
+
+- **[Alterar ficheiros num repositório](#alterar-ficheiros-num-reposit%C3%B3rio)**
+   - [Obter as alterações mais recentes a partir do repositório remoto](obter-as-alterações-mais-recentes-a-partir-do-repositório-remoto)
+   - [Enviar para o repositório remoto as alterações locais](#enviar-para-o-repositório-remoto-as-alterações-locais)
+
+- **[Contribuir](#contribuir)**
+
+
+## ANTES DE COMEÇAR: Instalar o comando `git`
 
 O comando `git` é um programa de linha de comandos que pode ser instalado nos vários sistemas operativos e que permite interagir com repositórios git. Existem IDEs e outras aplicações que oferecem interfaces de ambiente gráfico (GUI), mas neste momento basta usar a linha de comandos, que muitas vezes é até mais prática. Os instaladores do comando `git` podem ser obtidos na página [git-scm.com](https://git-scm.com/), que também inclui documentação sobre o seu uso. Alternativamente, o Visual Studio Installer permite instalar facilmente esta aplicação em ambiente Windows.
 
 
-## 2. Repositórios
-### a) Criar uma cópia local de um repositório (clone)
+## Repositórios
+### Criar uma cópia local de um repositório (clone)
 
 Quando pretendemos criar uma cópia local de um repositório remoto, para explorarmos o código e a documentação no nosso próprio computador, para compilarmos e usarmos a aplicação ou para posteriormente colaborarmos com esse projeto, utilizamos o comando `git clone`:
 
@@ -27,7 +42,7 @@ Unpacking objects: 100% (12/12), done.
 Este comando irá criar uma nova pasta na pasta de trabalho atual, contendo cópias de todos os ficheiros que se encontravam no repositório. Por isso, pode ser boa ideia usar antes o comando `cd` para mudar para a pasta onde vamos guardar os nossos vários repositórios `git`.
 
 
-### b) Criar um novo repositório local
+### Criar um novo repositório local
 
 Se o que pretendemos é criar um novo repositório no nosso próprio computador, mesmo que posteriormente o pretendamos disponibilizar através do Github ou de outro servidor, primeiro precisamos de criar a pasta do projeto (caso ainda não exista). De seguida, usamos o comando `cd` para irmos para essa pasta. Finalmente, o seguinte comando irá inicializar um novo repositório local a partir da pasta do projeto:
 
@@ -39,12 +54,12 @@ Initialized empty Git repository in C:/Users/victor/dev/Brinquedo6/.git/
 ```
 
 
-### c) Criar um novo repositório local a partir de uma pasta existente
+### Criar um novo repositório local a partir de uma pasta existente
 
 Se já temos uma pasta no nosso próprio computador que queremos transformar num repositório, também é possível. Primeiro inicializamos o repositório com `git init` e, seguidamente, adicionamos o seu conteúdo `git add .` (este comando adiciona todo o conteúdo da pasta atual). O comando `git commit`, que exemplificaremos mais abaixo, guardará esse estado inicial do repositório.
 
 
-### d) Configurar a lista de pastas e ficheiros a ignorar
+### Configurar a lista de pastas e ficheiros a ignorar
 
 Durante o desenvolvimento de software é normal haver pastas e ficheiros que não interessa adicionar ao sistema de controlo de versões. Por exemplo, ficheiros temporários criados durante a compilação do programa, certos executáveis, etc. A forma mais prática de excluir automaticamente todos esses ficheiros consiste em adicionar à raiz do repositório um ficheiro com o nome `.gitignore`. 
 
@@ -54,9 +69,9 @@ A página [www.gitignore.io](https://www.gitignore.io) permite gerar o ficheiro 
 
 
 
-## 3. Alterar ficheiros num repositório
+## Alterar ficheiros num repositório
 
-### a) Obter as alterações mais recentes a partir do repositório remoto
+### Obter as alterações mais recentes a partir do repositório remoto
 
 Para garantir que estamos a trabalhar com a versão mais recente do projeto, isto é, que o código no nosso repositório local está sincronizado com o repositório remoto, começamos por navegar até à pasta do repositório e usamos o comando `git fetch`.
 
@@ -102,7 +117,7 @@ nothing to commit, working tree clean
 
 
 
-### b) Enviar para o repositório remoto as alterações locais
+### Enviar para o repositório remoto as alterações locais
 
 Depois de efetuar alterações no nosso repositório local, por exemplo, criando, apagando ou mudando o nome a ficheiros, ou editando alguns deles, podemos guardar o estado atual com uma operação designada `commit`. Mas primeiro precisamos de preparar esse `commit`, adicionando as pastas e/ou ficheiros a considerar:
 
