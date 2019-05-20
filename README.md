@@ -1,4 +1,4 @@
-
+﻿
 # Repositório da turma EFA NS - Programador(a) de Informática (2019/2020)
 
 O objetivo principal deste repositório é ajudar os formandos desta turma a familiarizarem-se com o GitHub, com o conceito de controlo de versões e com a utilização básica do comando `git`. Adicionalmente, todos os membros da turma estão convidados a dar o seu contributo para os conteúdos deste repositório, adicionando mais dicas ou propondo alterações a algum dos guias ou programas existentes.
@@ -42,6 +42,15 @@ Initialized empty Git repository in C:/Users/victor/dev/Brinquedo6/.git/
 ### c) Criar um novo repositório local a partir de uma pasta existente
 
 Se já temos uma pasta no nosso próprio computador que queremos transformar num repositório, também é possível. Primeiro inicializamos o repositório com `git init` e, seguidamente, adicionamos o seu conteúdo `git add .` (este comando adiciona todo o conteúdo da pasta atual). O comando `git commit`, que exemplificaremos mais abaixo, guardará esse estado inicial do repositório.
+
+
+### d) Configurar a lista de pastas e ficheiros a ignorar
+
+Durante o desenvolvimento de software é normal haver pastas e ficheiros que não interessa adicionar ao sistema de controlo de versões. Por exemplo, ficheiros temporários criados durante a compilação do programa, certos executáveis, etc. A forma mais prática de excluir automaticamente todos esses ficheiros consiste em adicionar à raiz do repositório um ficheiro com o nome `.gitignore`. 
+
+A página [www.gitignore.io](https://www.gitignore.io) permite gerar o ficheiro com base no sistema operativo, linguagem de programação e/ou IDE a utilizar. [Neste repositório do GitHub](https://github.com/github/gitignore), há também dezenas de ficheiros `.gitignore` prontos a usar, incluindo um para o [Visual Studio](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+).
+
 
 
 
