@@ -13,7 +13,7 @@ O objetivo principal deste repositório é ajudar os formandos desta turma a fam
    - [Configurar a lista de pastas e ficheiros a ignorar](#configurar-a-lista-de-pastas-e-ficheiros-a-ignorar)  
 
 - **[Alterar ficheiros num repositório](#alterar-ficheiros-num-reposit%C3%B3rio)**
-   - [Obter as alterações mais recentes a partir do repositório remoto](obter-as-alterações-mais-recentes-a-partir-do-repositório-remoto)
+   - [Obter as alterações mais recentes a partir do repositório remoto](#obter-as-alterações-mais-recentes-a-partir-do-repositório-remoto)
    - [Enviar para o repositório remoto as alterações locais](#enviar-para-o-repositório-remoto-as-alterações-locais)
 
 - **[Contribuir](#contribuir)**
